@@ -4,7 +4,6 @@ import Variable from 'resource:///com/github/Aylur/ags/variable.js';
 import Notifications from 'resource:///com/github/Aylur/ags/service/notifications.js';
 import Mpris from 'resource:///com/github/Aylur/ags/service/mpris.js';
 import Battery from 'resource:///com/github/Aylur/ags/service/battery.js';
-import OverviewButton from './buttons/overview.js';
 import Workspaces from './buttons/workspaces.js';
 import FocusedClient from './buttons/focusedClient.js';
 import MediaIndicator from './buttons/mediaIndicator.js';
@@ -55,7 +54,6 @@ const SeparatorDot = (service, condition) => Widget.Separator({
 const Start = () => Widget.Box({
     class_name: 'start',
     children: [
-        OverviewButton(),
         SeparatorDot(),
         Workspaces(),
         SeparatorDot(),

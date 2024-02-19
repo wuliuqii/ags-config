@@ -19,8 +19,8 @@ export function init() {
     dependandOptions();
 
     reloadScss();
-    hyprlandInit();
-    setupHyprland();
+    // hyprlandInit();
+    // setupHyprland();
     wallpaper();
 }
 
