@@ -20,13 +20,16 @@ $button-radius: if($bar-style =='floating', max(0, $radii - $bar-spacing), $radi
             @if $drop-shadow {
                 box-shadow: 0 0 min(6px, $spacing/2) 0 $shadow,
                     inset 0 0 0 99px $hover;
-            } @else {
+            }
+
+            @else {
                 box-shadow: inset 0 0 0 99px $hover;
             }
         }
 
         &:active>*,
         &.active>* {
+
             label,
             image {
                 color: $accent-fg;
@@ -35,7 +38,9 @@ $button-radius: if($bar-style =='floating', max(0, $radii - $bar-spacing), $radi
             background-image: $active-gradient;
             background-color: $accent;
         }
-    } @else {
+    }
+
+    @else {
         @include accs-button($flat, $reactive);
 
         >* {
@@ -62,7 +67,9 @@ $button-radius: if($bar-style =='floating', max(0, $radii - $bar-spacing), $radi
     @if not $screen-corners and $bar-style =='normal' {
         @if $bar-position =='bottom' {
             border-top: $border;
-        } @else {
+        }
+
+        @else {
             border-bottom: $border;
         }
     }
@@ -110,7 +117,6 @@ $button-radius: if($bar-style =='floating', max(0, $radii - $bar-spacing), $radi
         }
     }
 
-    .powermenu,
     .recorder {
         image {
             color: transparentize($red, 0.3);
@@ -200,6 +206,7 @@ $button-radius: if($bar-style =='floating', max(0, $radii - $bar-spacing), $radi
         }
 
         @mixin color($color) {
+
             image,
             label {
                 color: $color

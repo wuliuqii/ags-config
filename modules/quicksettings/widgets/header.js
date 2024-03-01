@@ -1,6 +1,5 @@
 import Widget from 'resource:///com/github/Aylur/ags/widget.js';
 import Battery from 'resource:///com/github/Aylur/ags/service/battery.js';
-import PowerMenu from '../../services/powermenu.js';
 import Avatar from '../../misc/avatar.js';
 import icons from '../../icons.js';
 import { openSettings } from '../../settings/theme.js';
@@ -29,10 +28,6 @@ export default () => Widget.Box({
                 Widget.Button({
                     on_clicked: openSettings,
                     child: Widget.Icon(icons.ui.settings),
-                }),
-                Widget.Button({
-                    on_clicked: () => PowerMenu.action('shutdown'),
-                    child: Widget.Icon(icons.powermenu.shutdown),
                 }),
             ],
         }),

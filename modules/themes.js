@@ -8,7 +8,6 @@ export default [
     Theme({
         name: 'Catppuccin',
         icon: '󰄛 ',
-        'desktop.wallpaper.img': WP + 'evening-sky.png',
         'theme.widget.opacity': 90,
         'desktop.drop_shadow': false,
         'desktop.screen_corners': false,

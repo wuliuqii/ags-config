@@ -11,7 +11,6 @@ import DateButton from './buttons/date.js';
 import NotificationIndicator from './buttons/notificationIndicator.js';
 import SysTray from './buttons/sysTray.js';
 import SystemIndicators from './buttons/systemIndicators.js';
-import PowerMenu from './buttons/powerMenu.js';
 import ColorPicker from './buttons/colorPicker.js';
 import ScreenRecord from './buttons/screenRecord.js';
 import BatteryBar from './buttons/battery.js';
@@ -93,7 +92,6 @@ const End = () => Widget.Box({
         SeparatorDot(Battery, b => b.available),
         BatteryBar(),
         SeparatorDot(),
-        PowerMenu(),
     ],
 });
 

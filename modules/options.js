@@ -199,13 +199,6 @@ export default {
     },
 
     desktop: {
-        wallpaper: {
-            fg: Option('#fff', { 'scss': 'wallpaper-fg' }),
-            img: Option(themes[0].options['desktop.wallpaper.img'], {
-                'scssFormat': v => `"${v}"`,
-                'type': 'img',
-            }),
-        },
         avatar: Option(`/home/${USER}/.config/ags/assets/johny.jpg`, {
             'scssFormat': v => `"${v}"`,
             'type': 'img',

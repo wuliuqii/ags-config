@@ -51,13 +51,6 @@ export default {
         keyboard: 'keyboard-brightness-symbolic',
         screen: 'display-brightness-symbolic',
     },
-    powermenu: {
-        sleep: 'weather-clear-night-symbolic',
-        reboot: 'system-reboot-symbolic',
-        logout: 'system-log-out-symbolic',
-        shutdown: 'system-shutdown-symbolic',
-        lock: 'system-lock-screen-symbolic',
-    },
     recorder: {
         recording: 'media-record-symbolic',
     },
@@ -108,7 +101,6 @@ export default {
     },
     dialog: {
         Search: '',
-        Applauncher: '󰵆',
         Bar: '',
         Border: '󰃇',
         Color: '󰏘',

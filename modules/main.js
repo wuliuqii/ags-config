@@ -1,27 +1,18 @@
-import Applauncher from './applauncher/launcher.js';
 import Dashboard from './dashboard/dashboard.js';
 import FloatingDock from './dock/floatingDock.js';
 import Notifications from './notifications/notifications.js';
-import PowerMenu from './powermenu/powerMenu.js';
 import QuickSettings from './quicksettings/quickSettings.js';
 import TopBar from './bar/topBar.js';
-import Verification from './powermenu/verification.js';
 import { init } from './settings/setup.js';
 import { forMonitors } from './utils.js';
-import { initWallpaper } from './settings/wallpaper.js';
 import options from './options.js';
-
-initWallpaper();
 
 const windows = () => [
     forMonitors(FloatingDock),
     forMonitors(Notifications),
     forMonitors(TopBar),
-    Applauncher(),
     Dashboard(),
-    PowerMenu(),
     QuickSettings(),
-    Verification(),
 ];
 
 export default {

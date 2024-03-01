@@ -4,8 +4,6 @@ import Notifications from 'resource:///com/github/Aylur/ags/service/notification
 import options from '../options.js';
 import icons from '../icons.js';
 import { reloadScss, scssWatcher } from './scss.js';
-import { wallpaper } from './wallpaper.js';
-import { hyprlandInit, setupHyprland } from './hyprland.js';
 import { globals } from './globals.js';
 import Gtk from 'gi://Gtk';
 
@@ -19,9 +17,6 @@ export function init() {
     dependandOptions();
 
     reloadScss();
-    // hyprlandInit();
-    // setupHyprland();
-    wallpaper();
 }
 
 function dependandOptions() {

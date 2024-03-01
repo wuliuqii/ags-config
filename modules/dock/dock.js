@@ -99,12 +99,6 @@ const PinnedApps = () => Widget.Box({
 export default () => {
     const pinnedapps = PinnedApps();
     const taskbar = Taskbar();
-    const applauncher = AppButton({
-        class_name: 'launcher nonrunning',
-        icon: icons.apps.apps,
-        tooltip_text: 'Applications',
-        on_clicked: () => App.toggleWindow('launcher'),
-    });
     const separator = Widget.Separator({
         vpack: 'center',
         hpack: 'center',
@@ -115,6 +109,6 @@ export default () => {
     });
     return Widget.Box({
         class_name: 'dock',
-        children: [applauncher, pinnedapps, separator, taskbar],
+        children: [pinnedapps, separator, taskbar],
     });
 };
