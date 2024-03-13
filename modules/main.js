@@ -4,13 +4,12 @@ import Notifications from './notifications/notifications.js';
 import QuickSettings from './quicksettings/quickSettings.js';
 import TopBar from './bar/topBar.js';
 import { init } from './settings/setup.js';
-import { forMonitors } from './utils.js';
 import options from './options.js';
 
 const windows = () => [
-    forMonitors(FloatingDock),
-    forMonitors(Notifications),
-    forMonitors(TopBar),
+    FloatingDock(0),
+    Notifications(0),
+    TopBar(0),
     Dashboard(),
     QuickSettings(),
 ];

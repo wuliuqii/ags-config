@@ -274,12 +274,8 @@ $button-radius: if($bar-style =='floating', max(0, $radii - $bar-spacing), $radi
             min-height: 16px;
         }
 
-        &.monitor0 .indicator {
+        &.monitor .indicator {
             background-color: #f38ba8;
-        }
-
-        &.monitor1 .indicator {
-            background-color: #f9e2af;
         }
     }
 }
